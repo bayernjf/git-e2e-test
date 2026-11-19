@@ -1,0 +1,10 @@
+name: live-pat-check
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo marker
+        run: echo "live PAT walkthrough check"
